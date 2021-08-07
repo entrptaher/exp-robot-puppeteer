@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  robot:
+    build: .
+    command: xvfb-run -a node /app/index.js
+    volumes:
+      - ./data:/data
